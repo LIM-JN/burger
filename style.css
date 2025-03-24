@@ -109,6 +109,7 @@ header .menu .order {
     align-items: center; 
     color: var(--black);
     background-color: var(--purple);
+    min-width: 173px;
 }
 
 main {
@@ -270,7 +271,7 @@ main .start {
 
 .bg-container .second {
     position:absolute;
-    top: 410px;
+    bottom: 62px;
     right:calc(-600px + 20vw);
     z-index: 99;
 }
@@ -336,6 +337,7 @@ main .start {
     border: 1px solid #333;
     border-radius: 6px;
     flex: 1 1 200px;
+    max-width: 300px;
   }
   
   .newsletter button {
@@ -368,3 +370,90 @@ main .start {
   footer p.poppins {
     line-height: 24px;
   }
+
+@media only screen and (max-width:1200px)  {
+  main .headline {
+    font-size: 70px;
+    line-height: 1;
+    padding-bottom: 16px;
+  }
+  main .green-box {
+    padding: 38px 70px;
+  }
+  main .green-box .left {
+    font-size: 50px;
+    line-height: 1;
+  }
+  main .green-box .right p {
+    font-size: 20px;
+  }
+  main .subline {
+    font-size: 70px;
+  }
+  .start h2 {
+    font-size: 58px;
+  }
+  main .bg-container {
+    height: 620px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  main .gallery .box {
+    width: 80%;
+    left: 10%;
+    height: 140px;
+    padding: 22px 30px;
+  }
+  main .gallery .box h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width:800px) {
+  main .green-box {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  main .green-box .left {
+    font-size: 40px;
+    margin: 0 auto 28px;
+  }
+  main .green-box .right .btn {
+    margin: auto;
+  }
+  main .gallery {
+    display: block;
+  }
+  main .gallery .left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  main .gallery .box {
+    max-width: 300px;
+  }
+  main .headline {
+    font-size: 52px;
+  }
+  main .subline {
+    font-size: 52px;
+  }
+  .start h2 {
+    font-size: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer {
+    padding: 50px 20px 30px;
+  }
+  .outermost {
+    padding: 18px 20px;
+  }
+}
+@media only screen and (max-width:600px) {
+  header .menu h4 {
+    display: none;
+  }
+}
